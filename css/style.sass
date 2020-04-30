@@ -193,6 +193,41 @@ input:active, input:focus
             display: none
     li:last-child
         border-bottom: 0
+// Burger menu
+.burger-menu 
+    display: none
+    position: relative
+    width: 40px
+    height: 4px
+    background: #fff
+    transition: width .5s linear
+    opacity: 1
+    @media(max-width: 800px)
+        display: block
+    &:hover
+        cursor: pointer
+    &::before, &::after
+        content: ' '
+        width: 40px
+        height: 4px
+        position: absolute
+        background: #fff
+        overflow: hidden
+        transition: transform .5s linear
+    &::before
+        top: -10px
+    &::after
+        bottom: -10px
+.burger-menu.active
+    background: transparent
+    transition: transform .5s linear
+    margin-top: 15px
+    &::before
+        top: 0
+        transform: rotate(45deg) 
+    &::after
+        top: 0
+        transform: rotate(-45deg) 
 //Main
 .main__container
     position: relative
@@ -303,11 +338,6 @@ input:active, input:focus
     margin-bottom: 15px
 .main__content-item__caption
     text-align: right
-
-
-
-
-
 //Footer
 .footer
     position: relative
@@ -321,6 +351,7 @@ input:active, input:focus
     margin: 0 auto 20px
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
 .footer__wrapper-item
     width: 20.1%
 .footer__wrapper-item-title
@@ -378,18 +409,26 @@ input:active, input:focus
     justify-content: space-between
 .footer__bottom-panel-text
     width: 705px
+    margin-right: 10px
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
     font-size: 12px
     line-height: 24px
     color: #bcbbbc
     font-weight: 400
+    span
+        margin-right: 10px
 .footer__bootom-panel-right
     width: 320px
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
     align-items: center
 .footer__bootom-panel-icons
+    display: flex
+    align-items: center
+    justify-content: center
     img
         margin-right: 5px
     img:last-child
@@ -413,6 +452,102 @@ input:active, input:focus
             padding-right: 10px
         li:last-child
             border-right: 0
+
+// Breakpoints
+@media screen and ( max-width: 1200px )
+    .footer__bottom-panel-text
+        padding-left: 5px
+    .footer__bootom-panel-right
+        width: 300px
+@media screen and (max-width: 1024px) 
+    .footer__wrapper
+        padding: 0 20px
+    .footer__wrapper-item-title
+        min-height: 46.5px
+    .footer__bootom-panel-right
+        width: 230px
+        justify-content: center
+        li:first-child
+            margin-left: 0
+    .footer__bootom-panel-icons
+        margin-bottom: 10px
+@media screen and ( max-width: 800px )
+    .header
+        justify-content: space-between
+    .nav
+        width: 132px
+        display: none
+    .main__aside
+        width: 350px
+        padding: 10px 15px
+    .main__aside-title
+        width: auto
+        text-align: center
+        margin-bottom: 10px
+        font-size: 26px
+    .main__aside-text
+        width: auto
+        font-size: 16px
+    .main__content-wrapper
+        width: 100%
+        flex-direction: column
+        padding: 0
+        text-align: center
+    .main__content-item
+        padding: 10px
+    .main__content-item__title 
+        margin-bottom: 0
+    .main__content-item__text
+        margin-bottom: 10px
+    .footer__wrapper-item-title
+        margin-bottom: 0
+    .footer__wrapper-item, .footer__form
+        width: 48%
+        margin-bottom: 15px
+    .footer__form
+        text-align: center
+    .footer__form-btn-submit
+        width: 51%
+@media screen and ( max-width: 565px )
+    .modal__forms
+        width: 350px
+    .modal input 
+        width: 95%
+    .modal__accedi-submit, .modal__registr-submit
+        width: 166px
+    .header
+        padding: 0 10px
+    .main__aside 
+        width: 250px
+    .main__aside-title
+        font-size: 24px
+    .main__content-item__title
+        margin-bottom: 0
+        font-size: 24px
+    .footer__form-btn-submit 
+        font-size: 14px
+
+
+
+
 /* Dop classes
 .show
     display: flex
+.nav-active
+    height: 145px
+    display: flex
+    justify-content: flex-end
+    right: 0
+    bottom: -110%
+    z-index: 1
+    padding-right: 10px
+    background: #353436
+    > ul
+        flex-direction: column
+        align-items: flex-start
+        li
+            margin-bottom: 5px
+    .nav__ul-out
+        height: 170px
+        left: -150px
+        bottom: -145px

@@ -1,4 +1,17 @@
 $(function() {
+    // Burger menu
+    let burgerMenu = $('.burger-menu');
+    burgerMenu.on('click', function() {
+        burgerMenu.toggleClass('active')
+        $('.nav').toggleClass('nav-active')
+        $(window).resize(function() {
+            $('.nav').removeClass('nav-active')
+            burgerMenu.css('opacity', '0')
+            burgerMenu.removeClass('active')
+            burgerMenu.css('opacity', '1')
+        })
+    })
+    // Slider
     $('.main__slider').slick({
         arrows: false,
         dots: true,
@@ -37,10 +50,13 @@ $(function() {
             mainContent.css('top', "-30px")
         }
         $(window).resize(function() {
-            let heightWrapperResize =  $('.main__content-wrapper').height(); 
-            if ( heightWrapper !== heightWrapperResize) {
-                mainContent.css('top', `${-heightWrapperResize - 29}px`)
-                heightWrapper = $('.main__content-wrapper').height();
+            top = mainContent.css('top')
+            if ( top !== '-30px' ) {
+                let heightWrapperResize =  $('.main__content-wrapper').height(); 
+                if ( heightWrapper !== heightWrapperResize) {
+                    mainContent.css('top', `${-heightWrapperResize - 29}px`)
+                    heightWrapper = $('.main__content-wrapper').height();
+                } else {}
             }
         })
     })
