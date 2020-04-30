@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 18" width="13" height="18">
+	<defs>
+		<image width="13" height="18" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAMAAAC3taQAAAAAAXNSR0IB2cksfwAAASBQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////c5QCDQAAAGB0Uk5TADeSzuPfuGMLefr/2LHJ+bQfjkUJBC27vww1HRnQcJRMXHVxxNLnG88DUNzi1EcCVNrhByDugG7Kk1r+Pa+gJZH1+CvxWTH9TwWywA6Y9ujeMAiMoiHy6RMNEAFVcl846PWYugAAAMZJREFUeJxNzmlTQXEYBfBT3MLhiq7IUmSNkCVFcWXJvoYk5ft/C//LDJ1X5zdzZp4HAE5OdXrp7NwgKgxGE80W2coLm5Cd8qUCx5WTrmu4rTqPNoHXxxvc0o+A704wyBDCESUaYeweiDOBhyRSpCsNPDIDczaXf2JBLJ/5giJLSvb1TajMClR91fZeywP1BpvAhxpgq92Jdtnra5cGrA2TI44nGqYyS5+SNFN3T8wXX0t8r7BPm84fHLLm7xH4k7z/tEkd6hZF0hY1b5/FEAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="FOOTER">
+		<g id="SOCIAL">
+			<use id="Livello 4" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>

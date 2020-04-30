@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Gogle fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
     <!--Favicon-->
     <script src="https://kit.fontawesome.com/0b1a1cce9f.js"></script>
     <!--Slick-slider-->
@@ -15,9 +16,48 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="modal__background">
+        <div class="modal">
+            <h3 class="modal__title">AREA RISERVATA</h3>
+            <div class="modal__forms">
+                <form action="" class="modal__accedi">
+                    <legend>ACCEDI</legend>
+                    <input type="email" placeholder="E-mail">
+                    <input type="password" placeholder="Password">
+                    <button class="modal__accedi-submit">ACCEDI</button>
+                    <p class="modal__accedi-warning">Password dimenticata</p>
+                </form>
+                <form action="" class="modal__registr">
+                    <legend>REGISTRATI</legend>
+                    <input type="text" placeholder="Nome">
+                    <input type="text" placeholder="Cognome">
+                    <input type="email" placeholder="E-mail">
+                    <input type="password" placeholder="Password">
+                    <input type="checkbox" class="modal__registr-checkbox" id="registr__checkbox-one">
+                    <label for="registr__checkbox-one">Acconsento al trattamento dei dati</label>
+                    <input type="checkbox" class="modal__registr-checkbox" id="registr__checkbox-two">
+                    <label for="registr__checkbox-two">Mi iscrivo alla Newsletter</label>
+                    <button class="modal__registr-submit">ISCRIVITI</button>
+                </form>
+            </div>
+            <button class="modal-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 22" width="23" height="22">
+                    <defs>
+                        <image width="69" height="68" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2OSA2OCIgd2lkdGg9IjY5IiBoZWlnaHQ9IjY4Ij4KCTxkZWZzPgoJCTxjbGlwUGF0aCBjbGlwUGF0aFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNwMSI+CgkJCTxwYXRoIGQ9Ik0wIDBMNjkgMEw2OSA2OEwwIDY4WiIgLz4KCQk8L2NsaXBQYXRoPgoJPC9kZWZzPgoJPHN0eWxlPgoJCXRzcGFuIHsgd2hpdGUtc3BhY2U6cHJlIH0KCQkuc2hwMCB7IGZpbGw6ICNmZmZmZmYgfSAKCTwvc3R5bGU+Cgk8ZyBpZD0iUGFnZSAxIiBjbGlwLXBhdGg9InVybCgjY3AxKSI+CgkJPHBhdGggaWQ9IlBhdGggMSIgY2xhc3M9InNocDAiIGQ9Ik0zOC4wNiAzMy44NUw2OC4wNyA0LjMxQzY5LjA2IDMuMzMgNjkuMTQgMS42NiA2OC4yNCAwLjU3QzY3LjMzIC0wLjUxIDY1Ljc5IC0wLjU5IDY0LjggMC4zOUwzNC40MyAzMC4yOEw0LjA3IDAuMzlDMy4wNyAtMC41OSAxLjUzIC0wLjUxIDAuNjMgMC41N0MtMC4yNyAxLjY2IC0wLjIgMy4zMyAwLjggNC4zMUwzMC44MSAzMy44NUwwLjggNjMuMzlDLTAuMiA2NC4zNyAtMC4yNyA2Ni4wNSAwLjYzIDY3LjEzQzEuNTMgNjguMjEgMy4wOCA2OC4zIDQuMDcgNjcuMzFMMzQuNDMgMzcuNDJMNjQuOCA2Ny4zMUM2NS4yNiA2Ny43NyA2NS44NSA2OCA2Ni40MyA2OEM2Ny4wOSA2OCA2Ny43NiA2Ny43MSA2OC4yNCA2Ny4xM0M2OS4xNCA2Ni4wNSA2OS4wNiA2NC4zNyA2OC4wNyA2My4zOUwzOC4wNiAzMy44NVoiIC8+Cgk8L2c+Cjwvc3ZnPg=="/>
+                    </defs>
+                    <style>
+                        tspan { white-space:pre }
+                    </style>
+                    <g id="POP UP AREA RISERVATA">
+                        <use id="Oggetto vettoriale avanzato" href="#img1" transform="matrix(0.334,0,0,0.322,0,0)"/>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </div>
     <header class="header">
         <div class="header__menu-serviz">
-            <p class="header__menu-serviz-text">AREA RISERVATA</p>
+            <a hreh="#" class="header__menu-serviz-text">AREA RISERVATA</a>
             <img src="./assets/lock.png" alt="lock">
         </div>
         <div class="header__logo">
@@ -25,11 +65,41 @@
         </div>
         <nav class="nav">
             <ul class="nav__ul">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">AZIENDA</a></li>
-                <li><a href="#">COLLEZIONI</a></li>
-                <li><a href="#">NEWS</a></li>
-                <li><a href="#">CONTATTI</a></li>
+                <li class="nav__ul-item">
+                    <a href="#">HOME</a>
+                    <ul class="nav__ul-out">
+                        <li><a href="#">STORIA</a></li>
+                        <li><a href="#">MM DESIGN</a></li>
+                        <li><a href="#">DESIGNER</a></li>
+                        <li><a href="#">CERTIFICAZIONI</a></li>
+                    </ul>
+                </li>
+                <li class="nav__ul-item"><a href="#">AZIENDA</a>
+                    <ul class="nav__ul-out">
+                        <li><a href="#">STORIA</a></li>
+                        <li><a href="#">MM DESIGN</a></li>
+                        <li><a href="#">DESIGNER</a></li>
+                        <li><a href="#">CERTIFICAZIONI</a></li>
+                    </ul>
+                </li>
+                <li class="nav__ul-item"><a href="#">COLLEZIONI</a>
+                    <ul class="nav__ul-out">
+                        <li><a href="#">STORIA</a></li>
+                        <li><a href="#">MM DESIGN</a></li>
+                        <li><a href="#">DESIGNER</a></li>
+                        <li><a href="#">CERTIFICAZIONI</a></li>
+                    </ul>
+                </li>
+                <li class="nav__ul-item"><a href="#">NEWS</a>
+                    <ul class="nav__ul-out">
+                        <li><a href="#">STORIA</a></li>
+                        <li><a href="#">MM DESIGN</a></li>
+                        <li><a href="#">DESIGNER</a></li>
+                        <li><a href="#">CERTIFICAZIONI</a></li>
+                    </ul>
+                </li>
+                <li class="nav__ul-item"><a href="#">CONTATTI</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -98,38 +168,63 @@
             </div>
         </section>
     </main>
-
-
     <footer class="footer">
         <div class="footer__wrapper">
             <div class="footer__wrapper-item">
-                <h3>Lampadari made in italy</h3>
-                <p></p>
+                <h3 class="footer__wrapper-item-title">Lampadari made in italy</h3>
+                <p class="footer__wrapper-item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                </p>
             </div>
             <div class="footer__wrapper-item">
-                <h3>lampadari artigianali</h3>
-                <p></p>
+                <h3 class="footer__wrapper-item-title">lampadari artigianali</h3>
+                <p class="footer__wrapper-item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                </p>
             </div>
             <div class="footer__wrapper-item">
-                <h3>45 anni di esperienza</h3>
-                <p></p>
+                <h3 class="footer__wrapper-item-title">45 anni di esperienza</h3>
+                <p class="footer__wrapper-item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                </p>
             </div>
             <div class="footer__form">
-                <h3>NEWSLETTER</h3>
-                <form action=""></form>
+                <h3 class="footer__wrapper-item-title">NEWSLETTER</h3>
+                <form action="">
+                    <input type="text" name="" placeholder="Nome e Cognome">
+                    <input type="email" name="" placeholder="Email">
+                    <input class="footer__form-checkbox" type="checkbox" id="check">
+                    <label for="check" class="footer__form-check-label">Acconsento al trattamento dei dati</label>
+                    <button class="footer__form-btn-submit" type="submit">ISCRIVITI</button>
+                </form>
             </div>
         </div>
-        <div class="footer__bottom-panel"></div>
+        <div class="footer__bottom-panel">
+            <div class="footer__bottom-panel-text">
+                <span>MMLAMPADARI srl</span>
+                <span>Via Feltrina 00</span>
+                <span>31111 Pederobba  (TV)</span>
+                <span>0423.123456</span>
+                <address>info@mmlampadari.mm</address>
+                <span>P.IVA 04123456789</span>
+            </div>
+            <div class="footer__bootom-panel-right">
+                <div class="footer__bootom-panel-icons">
+                    <img src="./assets/icons/faceebok.svg" alt="faceebok">
+                    <img src="./assets/icons/imstagram.svg" alt="imstagram">
+                    <img src="./assets/icons/p.svg" alt="Pinterest">
+                </div>
+                <div class="footer__bootom-panel-lang">
+                    <ul>
+                        <li>ITA</li>
+                        <li>ENG</li>
+                        <li>DEU</li>
+                        <li>PYC</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
-
-
-
-
-
-
-
-
-
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
