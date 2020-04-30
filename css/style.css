@@ -384,6 +384,8 @@ input:active, input:focus {
   position: relative;
   top: -30px;
   color: #000;
+  -webkit-transition: top .5s linear;
+  transition: top .5s linear;
 }
 
 .main__content-arrow {
@@ -417,23 +419,31 @@ input:active, input:focus {
 }
 
 .main__content-arrow__left-close {
-  -webkit-transform: rotate(40deg) translateX(4.5px);
-          transform: rotate(40deg) translateX(4.5px);
+  -webkit-transform: rotate(-33deg) translateX(3.5px);
+          transform: rotate(-33deg) translateX(3.5px);
+  -webkit-transition: -webkit-transform .3s linear;
+  transition: -webkit-transform .3s linear;
+  transition: transform .3s linear;
+  transition: transform .3s linear, -webkit-transform .3s linear;
 }
 
 .main__content-arrow__left-active {
-  -webkit-transform: rotate(-40deg) translateX(4.5px);
-          transform: rotate(-40deg) translateX(4.5px);
+  -webkit-transform: rotate(33deg) translateX(3.5px);
+          transform: rotate(33deg) translateX(3.5px);
 }
 
 .main__content-arrow__right-close {
-  -webkit-transform: rotate(-40deg) translateX(-4.5px);
-          transform: rotate(-40deg) translateX(-4.5px);
+  -webkit-transform: rotate(33deg) translate(-3.5px);
+          transform: rotate(33deg) translate(-3.5px);
+  -webkit-transition: -webkit-transform .3s linear;
+  transition: -webkit-transform .3s linear;
+  transition: transform .3s linear;
+  transition: transform .3s linear, -webkit-transform .3s linear;
 }
 
 .main__content-arrow__right-active {
-  -webkit-transform: rotate(40deg) translateX(-4.5px);
-          transform: rotate(40deg) translateX(-4.5px);
+  -webkit-transform: rotate(-33deg) translate(-3.5px);
+          transform: rotate(-33deg) translate(-3.5px);
 }
 
 .main__content-wrapper {
