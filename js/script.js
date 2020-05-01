@@ -95,7 +95,7 @@ $(function () {
     event.preventDefault();
     modalBackground.addClass('show');
     modalBackground.on('click', function (e) {
-      if (!modal.is(e.target) && modalBackground.has(e.target).length === 0 || e.target === closeModal[0]) {
+      if (!modal.is(e.target) && modalBackground.has(e.target).length === 0 || e.target === closeModal[0] || e.target === $('.modal-close')[0]) {
         modalBackground.removeClass('show');
       }
     });
