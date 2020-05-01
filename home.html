@@ -18,15 +18,15 @@
         <div class="modal">
             <h3 class="modal__title">AREA RISERVATA</h3>
             <div class="modal__forms">
-                <form action="" class="modal__accedi">
-                    <legend>ACCEDI</legend>
+                <form class="modal__accedi">
+                    <h5>ACCEDI</h5>
                     <input type="email" placeholder="E-mail">
                     <input type="password" placeholder="Password">
                     <button class="modal__accedi-submit">ACCEDI</button>
                     <p class="modal__accedi-warning">Password dimenticata</p>
                 </form>
-                <form action="" class="modal__registr">
-                    <legend>REGISTRATI</legend>
+                <form class="modal__registr">
+                    <h5>REGISTRATI</h5>
                     <input type="text" placeholder="Nome">
                     <input type="text" placeholder="Cognome">
                     <input type="email" placeholder="E-mail">
@@ -45,7 +45,7 @@
     </div>
     <header class="header">
         <div class="header__menu-serviz">
-            <a hreh="#" class="header__menu-serviz-text">AREA RISERVATA</a>
+            <a class="header__menu-serviz-text" hreh="#">AREA RISERVATA</a>
             <img src="./assets/lock.png" alt="lock">
         </div>
         <div class="header__logo">
@@ -179,9 +179,9 @@
             </div>
             <div class="footer__form">
                 <h3 class="footer__wrapper-item-title">NEWSLETTER</h3>
-                <form action="">
-                    <input type="text" name="" placeholder="Nome e Cognome">
-                    <input type="email" name="" placeholder="Email">
+                <form method="GET">
+                    <input type="text" name="comment" placeholder="Nome e Cognome">
+                    <input type="email" name="email" placeholder="Email">
                     <input class="footer__form-checkbox" type="checkbox" id="check">
                     <label for="check" class="footer__form-check-label">Acconsento al trattamento dei dati</label>
                     <button class="footer__form-btn-submit" type="submit">ISCRIVITI</button>
@@ -214,9 +214,9 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

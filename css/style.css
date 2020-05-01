@@ -98,14 +98,17 @@ input:active, input:focus {
   background-color: #fff;
 }
 
-.modal input:placeholder {
+.modal input[placeholder],
+.modal input::-moz-placeholder,
+.modal input:-moz-placeholder,
+.modal input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 24px;
   color: #b5b4b4;
   font-weight: 400;
 }
 
-.modal legend {
+.modal h5 {
   margin-bottom: 13px;
   font-size: 18px;
   line-height: 24px;
