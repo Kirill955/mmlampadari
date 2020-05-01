@@ -597,7 +597,7 @@ input:active, input:focus {
 
 .footer__wrapper-item-title__number {
   font-family: 'Open Sans', sans-serif;
-  margin-right: 3px;
+  font-weight: 700;
 }
 
 .footer__wrapper-item-text {
