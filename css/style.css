@@ -595,6 +595,11 @@ input:active, input:focus {
   margin-bottom: 20px;
 }
 
+.footer__wrapper-item-title__number {
+  font-family: 'Open Sans', sans-serif;
+  margin-right: 3px;
+}
+
 .footer__wrapper-item-text {
   font-size: 12px;
   line-height: 17px;

@@ -19,7 +19,8 @@ $(function() {
         infinite: true,
         speed: 300,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        initialSlide: 1
     })
     /* Modal window */
     let btnModal = $('.header__menu-serviz-text'),
