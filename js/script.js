@@ -60,6 +60,8 @@
 //         })
 //     })
 // })
+
+// Es5 for IE 11
 "use strict";
 $(function () {
   // Burger menu
