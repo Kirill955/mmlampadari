@@ -25,7 +25,7 @@ button:hover, button:active
     border: 0
     cursor: pointer
     transition: background .3s linear
-input:active, input:focus
+input, input:active, input:focus
     outline: none
     border: 0
 .container
@@ -73,16 +73,18 @@ input:active, input:focus
         color: #fff
         font-weight: 700
     .modal__registr-checkbox
-        width: 8px
-        height: 8px
+        width: 10px
+        height: 10px
         background-color: #fff
     label, .modal__accedi-warning
         font-size: 10px
         line-height: 24px
         color: #b5b4b4
         font-weight: 400
+    .modal__accedi-warning
+        font-size: 12px
 .modal__title
-    margin: 10px 0 25px
+    margin: 10px 0 20px
     font-size: 24px
     line-height: 24px
     color: #fff
@@ -238,15 +240,20 @@ input:active, input:focus
         border: none
         outline: none
 .slick-dots
-    bottom: 40px
-    li button
+    bottom: 33px
+    li
         width: 14px
-        height: 14px
-        border-radius: 7px
-        background-color: #fff
-        border: 1.5px solid #000
-        &::before
-            display: none
+        button
+            width: 14px
+            height: 14px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 7px
+            background-color: #fff
+            border: 1.5px solid #000
+            &::before
+                display: none
     .slick-active button
         background-color: #e2d1a6
 //Aside
@@ -301,15 +308,15 @@ input:active, input:focus
     &:hover
         cursor: pointer
 .main__content-arrow__left-close
-    transform: rotate(-33deg) translateX(3.5px)
+    transform: rotate(-35deg) translateX(3.5px)
     transition: transform .3s linear
 .main__content-arrow__left-active
-    transform: rotate(33deg) translateX(3.5px)
+    transform: rotate(35deg) translateX(3.5px)
 .main__content-arrow__right-close
-    transform: rotate(33deg) translate(-3.5px)
+    transform: rotate(35deg) translate(-3.5px)
     transition: transform .3s linear
 .main__content-arrow__right-active
-    transform: rotate(-33deg) translate(-3.5px)
+    transform: rotate(-35deg) translate(-3.5px)
 // Content wrapper
 .main__content-wrapper
     position: absolute
@@ -345,7 +352,7 @@ input:active, input:focus
     z-index: 100
     background: #353436
     margin-top: -30px 
-    padding: 35px 0 15px
+    padding: 32px 0 15px
 .footer__wrapper
     max-width: 1200px
     padding: 0 135px
@@ -354,7 +361,7 @@ input:active, input:focus
     justify-content: space-between
     flex-wrap: wrap
 .footer__wrapper-item
-    width: 20.1%
+    width: 20.3%
 .footer__wrapper-item-title
     font-size: 14px
     line-height: 24px
@@ -383,17 +390,24 @@ input:active, input:focus
         height: 32px
         padding: 5px 5px
         background-color: #fff
-        margin-bottom: 10px
+        margin-bottom: 12px
+    .footer__form-email
+        margin-bottom: 6px
     input::placeholder
         font-size: 14px
         line-height: 17px
         color: #8c8c8c
         font-weight: 300
     .footer__form-checkbox
-        width: 8px
-        height: 8px
-        margin-bottom: 15px
+        position: relative
+        width: 10px
+        height: 10px
+        margin-bottom: 6px
+        background: #fff
 .footer__form-check-label
+    position: relative
+    right: 0
+    top: -2.5px
     font-size: 10px
     line-height: 24px
     color: #b5b4b4
