@@ -779,15 +779,17 @@ input, input:active, input:focus {
   background: #000;
 }
 
-.footer__facebbok, .footer__instagram, .footer__pinterest {
+.footer__facebook, .footer__instagram, .footer__pinterest {
   width: 18px;
   height: 18px;
   margin-right: 10px;
-  fill: #fff;
 }
 
-.footer__facebbok:hover, .footer__instagram:hover, .footer__pinterest:hover {
+.footer__facebook:hover, .footer__instagram:hover, .footer__pinterest:hover {
   cursor: pointer;
+}
+
+.footer__facebook:hover path, .footer__instagram:hover path, .footer__pinterest:hover path {
   fill: #e2d1a6;
 }
 
